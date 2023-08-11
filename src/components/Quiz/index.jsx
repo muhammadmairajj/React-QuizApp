@@ -142,7 +142,15 @@ const Quiz = ({ questions }) => {
   };
 
   useEffect(() => {
-    setHigherScores(JSON.parse(localStorage.getItem("highScores") || []));
+    const storedHighScores = localStorage.getItem("highScores");
+
+    if (storedHighScores) {
+      try {
+        setHigherScores(JSON.parse(storedHighScores));
+      } catch (error) {
+        console.error("Error parsing stored high scores:", error);
+      }
+    }
   }, []);
 
   const handleTryAgain = () => {
@@ -197,7 +205,9 @@ const Quiz = ({ questions }) => {
           <p>
             WrongAnswers: <span>{result.wrongAnswers}</span>
           </p>
-          <button onClick={handleTryAgain} className="try-again-btn">Try Again</button>
+          <button onClick={handleTryAgain} className="try-again-btn">
+            Try Again
+          </button>
           <br />
           <br />
           {!showScores ? (
@@ -211,7 +221,9 @@ const Quiz = ({ questions }) => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
-              <button onClick={handleSave} className="save_btn">Save</button>
+              <button onClick={handleSave} className="save_btn">
+                Save
+              </button>
             </>
           ) : (
             <table>

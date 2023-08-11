@@ -1,11 +1,11 @@
 import './App.css';
 import Quiz from './components/Quiz';
-import { jsQuizz } from './constant/questions';
+import { quizQuestion } from './constant/questions';
 
 function App() {
   return (
     <div className="App">
-      <Quiz questions={jsQuizz.questions} />
+      <Quiz questions={quizQuestion.questions} />
     </div>
   );
 }
