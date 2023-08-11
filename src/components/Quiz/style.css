@@ -1,0 +1,153 @@
+.quiz-container {
+    width: 500px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 30px 50px;
+    /* margin-top: 100px; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.quiz-heading {
+    font-family: cursive;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.active-question-no {
+    font-size: 32px;
+    color: #150080;
+    font-weight: 500;
+}
+
+.total-questions {
+    font-size: 16px;
+    color: #9c9c9c;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: -40px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    padding: 11px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #2d264b;
+    border: 1px solid #9c9c9c;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+.selected-answer {
+    background: #150080;
+    color: #ffffff;
+    border: 1px solid #d08642;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 9px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    background: #40e0d0;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #6699CC;
+    color: #ffffff;
+}
+
+.back_btn {
+    border-radius: 9px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    background: #ffae42;
+}
+
+.back_btn:disabled {
+    cursor: not-allowed;
+    background-color: #808080;
+    color: #ffffff;
+}
+
+.result {
+    text-align: center;
+}
+
+.result h3 {
+    font-size: 24px;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+.result p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.result p span {
+    color: #150080;
+    font-size: 22px;
+  }
+
+input {
+    border: 1px solid #9c9c9c;
+    border-radius: 4px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.try-again-btn {
+    background-color: #dc143c;
+    color: #ffffff;
+}
+
+.save_btn {
+    background-color: #0073c7;
+    color: #fff;
+}
